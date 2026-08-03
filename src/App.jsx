@@ -1,31 +1,42 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Layout from './Components/Layout/Layout'
-import Home from './Components/Home/Home'
-import Blog from './Components/Blog/Blog'
-import Notfound from './Components/Notfound/Notfound'
-import BlogDetail from './Components/BlogDetail/BlogDetail'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./Components/Layout/Layout";
+import Home from "./Components/Home/Home";
+import Blog from "./Components/Blog/Blog";
+import Notfound from "./Components/Notfound/Notfound";
+import BlogDetail from "./Components/BlogDetail/BlogDetail";
 
 function App() {
-
-  let route = createBrowserRouter(
+  const router = createBrowserRouter(
     [
       {
-        path: '/',
+        path: "/",
         element: <Layout />,
         children: [
-          { index: true, element: <Home /> },
-          { path: 'blog', element: <Blog /> },
-          { path: 'blog/:id', element: <BlogDetail /> },
-          { path: '*', element: <Notfound /> }
-        ]
-      }
+          {
+            index: true,
+            element: <Home />,
+          },
+          {
+            path: "blog",
+            element: <Blog />,
+          },
+          {
+            path: "blog/:id",
+            element: <BlogDetail />,
+          },
+          {
+            path: "*",
+            element: <Notfound />,
+          },
+        ],
+      },
     ],
     {
-      basename: '/Adasa'
+      basename: "/Adasa",
     }
-  )
+  );
 
-  return <RouterProvider router={route} />
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
