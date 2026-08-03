@@ -137,12 +137,12 @@ export default function BlogDetail() {
                                     <p class="text-neutral-500 text-sm">استكشف المزيد من المحتوى المميز</p>
                                 </div>
                             </div>
-                            <a class="hidden sm:flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors group" href="/blog" data-discover="true">عرض الكل<i class="fa-solid fa-arrow-left group-hover:-translate-x-1 transition-transform"></i></a>
+                            <Link class="hidden sm:flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors group" to="/blog" data-discover="true">عرض الكل<i class="fa-solid fa-arrow-left group-hover:-translate-x-1 transition-transform"></i></Link>
                         </div>
                         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                             {relatedArticles.map((relatedArticle) => (
-                                <a key={relatedArticle.id} class="group relative bg-[#111111] rounded-2xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500" href={`/blog/${relatedArticle.slug}`} data-discover="true">
+                                <Link key={relatedArticle.id} class="group relative bg-[#111111] rounded-2xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500" to={`/blog/${relatedArticle.slug}`} data-discover="true">
                                     <div class="relative h-48 overflow-hidden">
                                         <img alt={relatedArticle.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src={relatedArticle.image} />
                                         <div class="absolute inset-0 bg-linear-to-trom-[#111111] to-transparent"></div>
@@ -157,7 +157,7 @@ export default function BlogDetail() {
                                             <span>{relatedArticle.readTime}</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>
