@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import articlesData from "../../Data/posts.json";
 import Notfound from "../Notfound/Notfound";
-
+import { Link } from "react-router-dom";
 
 export default function BlogDetail() {
     const { id } = useParams();
