@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -65,7 +66,9 @@ export default function Home() {
             </a>
           </div>
           <div className="space-y-8">
-            <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500" style={{ animationDelay: "0ms" }}><a className="block" href="/blog/mastering-golden-hour-photography" data-discover="true"><div className="grid md:grid-cols-2 gap-0">
+            <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500" style={{ animationDelay: "0ms" }}>
+            <Link className="block" to="/blog/mastering-golden-hour-photography" data-discover="true">
+            <div className="grid md:grid-cols-2 gap-0">
               <div className="relative h-72 md:h-100 overflow-hidden">
                 <img alt="إتقان تصوير الساعة الذهبية: دليل شامل" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?w=800&amp;h=400&amp;fit=crop" />
                 <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -101,9 +104,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            </a>
+            </Link>
             </article>
-            <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500" style={{ animationDelay: "150ms" }}><a className="block" href="/blog/portrait-photography-secrets" data-discover="true"><div className="grid md:grid-cols-2 gap-0">
+            <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500" style={{ animationDelay: "150ms" }}>
+            <Link className="block" to="/blog/portrait-photography-secrets" data-discover="true">
+            <div className="grid md:grid-cols-2 gap-0">
               <div className="relative h-72 md:h-100 overflow-hidden">
                 <img alt="أسرار تصوير البورتريه: كيف تلتقط روح الشخصية" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&amp;h=400&amp;fit=crop" />
                 <div className="absolute inset-0 bg-linear-to-trom-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -137,9 +142,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            </a>
+            </Link>
             </article>
-            <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500" style={{ animationDelay: "300ms" }}><a className="block" href="/blog/landscape-photography-guide" data-discover="true"><div className="grid md:grid-cols-2 gap-0"><div className="relative h-72 md:h-100rflow-hidden">
+            <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500" style={{ animationDelay: "300ms" }}>
+            <Link className="block" to="/blog/landscape-photography-guide" data-discover="true">
+            <div className="grid md:grid-cols-2 gap-0"><div className="relative h-72 md:h-100rflow-hidden">
               <img alt="دليل تصوير المناظر الطبيعية: من المبتدئ إلى المحترف" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=400&amp;fit=crop" />
               <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               </div>
@@ -172,7 +179,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            </a>
+            </Link>
             </article>
           </div>
         </div>
