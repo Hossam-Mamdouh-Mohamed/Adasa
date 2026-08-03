@@ -1,7 +1,7 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Article({ article }) {
-    return (
+    return (e
         <article class="group card overflow-hidden" >
             <Link class="block" to={`/blog/${article.slug}`} data-discover="true">
                 <div class="relative h-52 overflow-hidden">
