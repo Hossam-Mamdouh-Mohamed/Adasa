@@ -3,7 +3,7 @@ import React from 'react'
 export default function Article({ article }) {
     return (
         <article class="group card overflow-hidden" >
-            <a class="block" href={`/blog/${article.slug}`} data-discover="true">
+            <Link class="block" to={`/blog/${article.slug}`} data-discover="true">
                 <div class="relative h-52 overflow-hidden">
                     <img alt={article.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src={article.image} />
                     <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -32,7 +32,7 @@ export default function Article({ article }) {
                         </div>
                     </div>
                 </div>
-            </a>
+            </Link>
         </article>
     )
 }
